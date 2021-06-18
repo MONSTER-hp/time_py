@@ -1,7 +1,6 @@
-# by DrAnDrOiD
-# @WhO_DrAnDrOiD
-# kos nanat bedon ejaze eski beri ya ba script khodam bara khodam beshakhi
-
+# SITE HOSTING : MASTER-HOSTING.IR
+# CHANEEL TELEGRAM : @MONSTER_SECURITY
+# سورس تایم برای اکانت تلگرام 
 
 from telethon import TelegramClient, events, sync, errors,utils
 from telethon.tl.functions.account import UpdateProfileRequest
@@ -19,7 +18,7 @@ logger = logging.getLogger(__name__)
 
 api_id = "5185200" #api id
 api_hash = "c4539ad71279c96616cf84b2ab02bc4e" #api hash
-admin = "@zanike_Alzaymeri" # id admin ba @
+admin = "@MONSTER_SECURITY" # id admin ba @
 
 
 client = TelegramClient("data", api_id, api_hash)
@@ -34,7 +33,7 @@ async def wait_hours(event):
     ik = int(tsxt)
 @client.on(events.NewMessage(from_users=admin, pattern="help")) #id admin
 async def wait_hours(event):
-    client.send_message(event.chat_id, """☾︎ By @WhO_DrAnDrOiD   ☽︎
+    client.send_message(event.chat_id, """☾︎  @MONSTER_SECURITY  ☽︎
 ☾︎                                     ☽︎
 ☾︎ add:                              ☽︎
 ☾︎ ba in dastorige saat       ☽︎
@@ -64,7 +63,7 @@ async def clock1():
     h2 = h1 + ik
     if len(str(h2)) == 1:
         h2 = "0"+str(h2)
-    await client(UpdateProfileRequest(first_name='NAME '+d.strftime("%H : ").translate(str.maketrans(random.choice(fonts)))+str(h2).translate(str.maketrans(random.choice(fonts)))))   
+    await client(UpdateProfileRequest(first_name='Time '+d.strftime("%H : ").translate(str.maketrans(random.choice(fonts)))+str(h2).translate(str.maketrans(random.choice(fonts)))))   
             
             
             
